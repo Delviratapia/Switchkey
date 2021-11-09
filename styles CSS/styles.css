@@ -62,15 +62,14 @@ body {
 
 .wrap {
     width: 40%;
-    position: absolute;
+    position:absolute;
     top: 25%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    left: 44%;
+    transform: translate(-20%, -50%);
+
 }
 
 /* end of searchbar */
-
-
 
 ul {
     list-style-type: none;
@@ -149,3 +148,17 @@ ul {
     bottom: 0.3em;
 
 }
+
+/* product columns grid container */
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+  }
+
+  /* END of product columns grid container */
