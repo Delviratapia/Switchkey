@@ -1,44 +1,132 @@
-*{
-    margin :0;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#navbar{
+
+
+body {
+    background:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* searchbar */
+
+.search {
+    width: 100%;
+    position: relative;
     display: flex;
-    align-items:center;
+}
+
+.searchTerm {
+
+    width: 100%;
+    border: 3px solid #dcba9e;
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #877261;
+}
+
+.searchTerm:focus {
+    color: #877261;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #dcba9e;
+    background: #dcba9e;
+    text-align: center;
+    color: #322a24;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 40%;
+  position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+/* end of searchbar */
+
+
+
+#navbar {
+    display: flex;
+    align-items: center;
     padding: 20px;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li{
-display: inline-block;
-margin-right: 20px;
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
-a{
+
+a {
     text-decoration: none;
-    color: black ;
+    color: #322a24;
 }
-p{
-    color:black;
+
+p {
+    color:#322a24;
 }
-.container{
-    max: width 1300px; ;
+
+.container {
+    max: width 1300px;
+    ;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
-.row{
+
+
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.col{
-    
+
+.col-2 {
+flex-basis: 50px;
+min-width: 300px;
+}
+.col-2 img{
+    max-width: 500px;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #dcba9e;
+    color: #322a24;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
 }
