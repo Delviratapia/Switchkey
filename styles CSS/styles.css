@@ -175,6 +175,7 @@ ul li {
 
 .grid-item {
     padding: 5px;
+    
 }
 
 .grid-item h1 {
@@ -197,12 +198,13 @@ ul li {
 .grid-container img:hover {
     top: -10px;
     opacity: 0.3;
+    
 }
 
-.container {
+/* .container {
     position: relative;
     width: 50%;
-}
+} */
 
 .middletext {
     transition: .5s ease;
@@ -229,3 +231,12 @@ ul li {
 
 
 /* END of product columns grid container */
+
+/* footer */
+
+.footer{
+    background: #000;
+    color: #322a24;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
