@@ -101,32 +101,36 @@ ul li {
     width: 100%;
 }
 
-
-
 .row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .col-2 {
-    flex-basis: 50px;
-    min-width: 300px;
+    flex-wrap: wrap;
+    min-width: 400px;
 }
 
 .col-2 img {
-    max-width: 500px;
-    padding: 50px 5em;
+    flex-wrap: wrap;
+    width: 50em;
+    max-width: 800px;
+    padding: 4em 5em;
+    margin-right: 5em;
     border-radius: 10em;
 
 }
 
 .col-2 h1 {
-    font-size: 50px;
+    flex-basis: 50px;
+    font-size: 40px;
     line-height: 60px;
-    margin: 25px 15px 10px 10px;
 }
+.col-2 h1,.col-2 p,.col-2 .btn {
+    margin: 25px 15px 10px 50px;
+}
+
 
 .btn {
     display: inline-block;
@@ -240,3 +244,4 @@ ul li {
     font-size: 14px;
     padding: 60px 0 20px;
 }
+
