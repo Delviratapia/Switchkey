@@ -215,6 +215,7 @@ ul li {
     text-align: center;
 }
 
+
 .container:hover .middletext {
     opacity: 1;
 }
@@ -225,5 +226,6 @@ ul li {
     font-size: 16px;
     padding: 16px 32px;
 }
+
 
 /* END of product columns grid container */
