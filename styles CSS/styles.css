@@ -209,7 +209,7 @@ ul {
     border-radius: 3px;
 }
 
-.grid-item h1:hover{
+.grid-item h1:hover {
     background: #dcba9e;
     color: #dcba9e;
     border-radius: 10px;
@@ -217,8 +217,8 @@ ul {
 }
 
 a {
-text-decoration: none; 
-color: #322a24;
+    text-decoration: none;
+    color: #322a24;
 }
 
 .grid-container img {
@@ -369,7 +369,7 @@ color: #322a24;
         margin-bottom: 10px;
     }
 
-    
+
 }
 
 /* #topbtn {  
@@ -424,32 +424,139 @@ color: #322a24;
 /* style products */
 
 
-.title{
+.title {
     text-align: center;
     padding-top: 50px;
 
 }
 
-.small-container{ 
+
+.small-container {
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-   
-} 
+
+}
 
 
-.col-4{
+.col-4 {
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
 }
 
-.col-4 img{
+.col-4 img {
     width: 100%;
 }
+
 
 /* end of style products */
 
 
+/* shipping table style */
+
+table.shippingTable {
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border: 2px solid #322A24;
+    background-color: #FFEAD4;
+    width: 60%;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+table.shippingTable td,
+table.shippingTable th {
+    border: 1px solid #948473;
+    padding: 15px 10px;
+}
+
+table.shippingTable tbody td {
+    font-size: 13px;
+}
+
+table.shippingTable thead {
+    background: #948473;
+}
+
+table.shippingTable thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #322A24;
+    text-align: center;
+    border-left: 2px solid #948473;
+}
+
+table.shippingTable thead th:first-child {
+    border-left: none;
+}
+
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* End of shipping table style */
+
+/* account form */
+
+
+.accountform {
+    padding-top: 5%;
+    ;
+    padding-bottom: 05%;
+}
+
+.accountform h2 {
+    margin-bottom: 5%;
+    margin-left: 45%;
+}
+
+/* end of account form */
+
+
+
+/* contact form */
+
+.contact-form h3 {
+    margin-left: 45%;
+    margin-top: 05%;
+    margin-bottom: 2%;
+}
+
+form {
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+/* end of contact form */
+
+/* FAQ style */
+
+
+.faq {
+    margin-left: 10%;
+    margin-bottom: 05%;
+}
+
+.faq .title {
+    margin-bottom: 5%;
+}
+
+.faq-2 h5 {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-right: 5%;
+}
+
+.faq-2 h3 {
+    text-align: center;
+}
+
+/* end of FAQ style */
