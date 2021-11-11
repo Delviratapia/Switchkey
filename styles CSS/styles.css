@@ -560,3 +560,23 @@ form {
 }
 
 /* end of FAQ style */
+
+/* about part */
+
+.about-log h5 {
+    margin-bottom: 5%;
+}
+
+
+/* end of about part */
+
+
+
+/* privacy policy part */
+
+.policy-log h5 {
+    margin-bottom: 5%;
+
+}
+
+/* End of privacy policy part */
