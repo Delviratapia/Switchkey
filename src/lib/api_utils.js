@@ -153,7 +153,11 @@ const update = (e) => {
     fetch(`${ip}/users/${id}/`, requestOptions)
         .then((res) => res.json())
         .then((res) => {
-            console.log(res)
+            if (res.code == "token_not_valid") {
+                alert("your token has expired, login and try again")
+                return
+            }
+            alert("updated!")
         })
         .catch((error) => alert(`Error ${error}`));
 }
@@ -175,7 +179,9 @@ const delete_ = (e) => {
         .then((res) => {
             if (res.code == "token_not_valid") {
                 alert("your token has expired, login and try again")
+                return
             }
+            alert("deleted!")
         })
         .catch((error) => alert(`Error ${error}`));
 }
