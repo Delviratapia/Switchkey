@@ -83,7 +83,7 @@ const register = (e) => {
                 alert(res["password2"])
                 return;
 
-            }else {
+            } else {
                 if (res["password1"] !== undefined) {
                     alert(res["password1"])
                     return;
@@ -101,7 +101,7 @@ const register = (e) => {
                 return;
 
             }
-          
+
             if (res["non_field_errors"] !== undefined) {
                 alert("not Registered");
                 return;
@@ -221,8 +221,6 @@ const buy = (id) => {
         redirect: "follow",
     };
 
-    console.log(`${id}`)
-    console.log(`${ip}/users/buy/`)
     return fetch(`${ip}/users/buy/`, requestOptions)
         .then((res) => res.json())
         .then((res) => {
