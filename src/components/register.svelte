@@ -96,7 +96,7 @@
             </div>
 
             <div class="form-field">
-                <input type="submit" id="register-btn" value="Log in" />
+                <input type="submit" id="register-btn" value="Register" />
             </div>
         </form>
     </div>
