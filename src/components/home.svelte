@@ -17,7 +17,7 @@
     
 </div>
 <div class="flex justify-center">
-<a use:link href="/cover_product" class="btn w-64 flex justify-center"> I want to know more! →</a>
+<a use:link href="/keyboards" class="btn w-64 flex justify-center"> I want to know more! →</a>
 </div>
 
 

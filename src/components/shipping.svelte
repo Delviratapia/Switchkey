@@ -3,7 +3,7 @@
   
     <!-- Shipping table -->
 
-    <table class="shippingTable ">
+    <table class="shippingTable ml-[6%] sm:ml-[20%] my-20 md:my-64">
 
         <thead>
             <tr>
@@ -42,7 +42,7 @@
         
     </table>
 
-    <h4>*The delivery time may be affected by holidays.</h4>
+    <h4 class="mb-10">*The delivery time may be affected by holidays.</h4>
 
 
 

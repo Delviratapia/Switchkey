@@ -2,12 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
 
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-} */
 
 .header {
     background: radial-gradient(#fff, #fff, #fff, #eeddcf)
@@ -59,18 +54,6 @@ body {
     font-size: 20px;
 }
 
-/* .wrap {
-    width: 40%;
-    position: absolute;
-    top: 25%;
-    left: 44%;
-    transform: translate(-20%, -50%);
-
-} */
-
-/* end of searchbar */
-
-/* navegation bar */
 
 ul {
     list-style-type: none;
@@ -81,57 +64,7 @@ ul {
     text-decoration: none;
     color: #000;
 }
-/*
-.navbar {
-    padding: 20px;
-} */
 
-/* .navbar,
-.main-nav,
-.ul2 {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 30%;
-
-
-} */
-
-
-/*
-.navbar ul li {
-    padding: 0 5px;
-
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.col-2 {
-    flex-wrap: wrap;
-    min-width: 400px;
-}
-
-.col-2 h1 {
-    flex-basis: 50px;
-    font-size: 40px;
-    line-height: 60px;
-}
-
-.col-2 h1,
-.col-2 p,
-.col-2 .btn {
-    margin: 25px 15px 10px 50px;
-}
- */
 
  .btn {
     background: #dcba9e;
@@ -232,38 +165,7 @@ a {
 
 }
 
-/* .container {
-    position: relative;
-    width: 50%;
-} */
-/*
-.middletext {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-} */
 
-/*
-.container:hover .middletext {
-    opacity: 1;
-} */
-
-/* .text {
-    background-color: #04AA6D;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-} */
-
-
-/* END of product columns grid container */
-
-/* footer */
 
 .footer {
     background: rgb(255, 255, 255);
@@ -284,19 +186,6 @@ a {
 
 
 
-/* .footer-logo { */
-/*     flex: 1; */
-/*     padding-left: 22%; */
-/* } */
-
-
-/* .footer hr {
-    border-width: 1px;
-
-}
- */
-
-
 .menubtn {
 
     width: 28px;
@@ -305,27 +194,6 @@ a {
     cursor: pointer;
 }
 
-
-
-/* #topbtn {
-    position: fixed;
-    bottom: 10px;
-    float: right;
-    right: 20.5%;
-    left: 77.25%;
-    max-width: 90px;
-    width: 100%;
-    font-size: 12px;
-    border-color: rgba(5, 82, 248);
-    background-color: rgb(5, 82, 248);
-    padding: .5px;
-    border-radius: 4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#topbtn:hover {
-    background-color: #fafafa;
-} */
 
 
 .myButton {
@@ -411,10 +279,7 @@ table.shippingTable {
     border: 2px solid #322A24;
     background-color: #FFEAD4;
     width: 60%;
-    text-align: center;
-    margin-left: 250px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    text-align: cente
 
 }
 
@@ -654,88 +519,6 @@ table#keyboards th {
 }
 
 
-
-
-
-/* Full-width input fields */
-/* .login-container input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-
-  /* Set a style for all buttons */
-/* .form-btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  .form-btn:hover {
-    opacity: 0.8;
-  }
-
-   */
-/* Center the image and position the close button */
-/* .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-
-  }
-
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-
-
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-
-
-  .login-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-
-  }
-
-
-  .auth-container{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 100%;
-      justify-content:space-around;
-      align-items: center;
-
-  }
-
-
-  .sign-container{
-
-width: 50%;
-height: 50%;
-  }
-
-  .login-container{
-
-width: 50%;
-height: 50%;
-  }
-
-
-
- */
 
 
 .auth-container {
