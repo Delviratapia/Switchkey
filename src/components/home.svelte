@@ -6,21 +6,27 @@
 </script>
 
 <!-- Cover img/text -->
-<div class="row">
-    <div class="col-2">
-        <h1>Check out our most popular product!</h1>
-        <p>A keyboard that suits everyone, <br /> even kids!</p>
-        <a use:link href="/cover_product" class="btn">
-            I want to know more! →</a
-        >
-    </div>
-    <div class="col-2">
-        <img src="images/bestkey.png" alt="" />
-    </div>
+
+
+<img src="images/bestkey.png" class="rounded-md w-fit my-4" alt="" />
+
+<div class="col-2 flex flex-col  justify-center my-2">
+    <h1>Check out our most popular product!</h1>
+    <p>A keyboard that suits everyone, <br /> even kids!</p>
+  
+    
+</div>
+<div class="flex justify-center">
+<a use:link href="/cover_product" class="btn w-64 flex justify-center"> I want to know more! →</a>
 </div>
 
+
+<h2 class="mt-20 text-xl"><b>Our Products</b></h2>
+
+
+
 <!-- Product columns -->
-<div class="grid-container">
+<div class="grid-container lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
     {#await getProducts()}
         <p>...Loading Animation</p>
     {:then products}

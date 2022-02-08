@@ -4,15 +4,15 @@
     let addr = `/cover_product/${id}`;
 </script>
 
-<div class="grid-item">
+<div class="grid-item grid">
     {#if arrival}
-        <h1><a href="productsNewarrivals.html">New arrivals</a></h1>
+        <h1><a href="productsNewarrivals.html"><b></b></a></h1>
     {/if}
     {#if incoming}
-        <h1><a href="Incomingstock.html">Incoming stock</a></h1>
+        <h1><a href="Incomingstock.html" class="order-8"><b></b></a></h1>
     {/if}
     {#if popular}
-        <h1><a href="mostpopular.html">Most popular</a></h1>
+        <h1><a href="mostpopular.html"><b></b></a></h1>
     {/if}
     <a href={addr} use:link> <img src={image} /> </a>
 </div>

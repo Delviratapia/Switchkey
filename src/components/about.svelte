@@ -1,7 +1,6 @@
 
-<body>
 
-    <div class="about-log">
+    <div class="text-center">
 
         <h2 class="title">About us</h2>
 
@@ -11,4 +10,3 @@
 
     </div>
 
-</body>

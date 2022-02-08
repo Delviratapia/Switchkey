@@ -21,23 +21,36 @@
     });
 </script>
 
-<div class="account-center-items">
+<div class="flex lg:w-1/4 w-3/4 sm:w-2/4 smh-2/4 justify-center bg-white border-gray-300 border-4 rounded-xl my-28">
     <!-- options -->
+    <ul class=" options-btn items-center justify-evenly ">
+    <h2 class="text-black rounded-lg p-4  w-full"><b>Settings</b></h2>
 
-    <ul class=" options-btn hidden">
         <li>
             <!-- svelte-ignore a11y-missing-attribute -->
             <a
                 href="/account/modify"
                 use:link
-                class="modify-userdata options-data">Modify data account</a
+                class="modify-userdata options-data w-44 my-8">Modify data account</a
             >
         </li>
         <li>
             <!-- svelte-ignore a11y-missing-attribute -->
-            <a id="delete user" href="#" class="delete-userdata options-data"
+            <a id="delete user" href="#" class="justify-center delete-userdata options-data w-44 my-8"
                 >Delete account</a
             >
         </li>
+        <li class="mb-12">
+            <!-- svelte-ignore a11y-missing-attribute -->
+            <a
+                on:click={() => {
+                    localStorage.removeItem("token");
+                    alert("logged out!");
+                }}
+                href="#"
+                class="modify-userdata options-data justify-center mb-12">Logout</a
+            >
+        </li>
+
     </ul>
 </div>

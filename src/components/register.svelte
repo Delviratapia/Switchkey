@@ -70,7 +70,7 @@
 
             <div class="form-field">
                 <label for="login-password"
-                    ><i class="far fa-envelope" /><span class="hidden"
+                    ><i class="fas fa-file-signature" /><span class="hidden"
                         >First Name</span
                     ></label
                 >
@@ -83,7 +83,7 @@
             </div>
             <div class="form-field">
                 <label for="login-password"
-                    ><i class="far fa-envelope" /><span class="hidden"
+                    ><i class="fas fa-file-signature" /><span class="hidden"
                         >Last Name</span
                     ></label
                 >

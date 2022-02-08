@@ -57,11 +57,15 @@ const register = (e) => {
     let password1 = document.querySelector("#register-password1");
     let password2 = document.querySelector("#register-password2");
     let email = document.querySelector("#register-email");
+    let first_name = document.querySelector("#register-first-name");
+    let last_name = document.querySelector("#register-last-name");
     let payload = {
         username: username.value,
         password1: password1.value,
         password2: password2.value,
         email: email.value,
+        first_name: first_name.value,
+        last_name: last_name.value,
     };
     let requestOptions = {
         method: "POST",
@@ -93,11 +97,23 @@ const update = (e) => {
     let lastnameInput = document.querySelector(".lname-input").value;
     let emailInput = document.querySelector(".email-input").value;
 
-    let payload = JSON.stringify({
-        first_name: firstnameInput,
-        last_name: lastnameInput,
-        email: emailInput,
-    });
+    let body = {}
+    if (firstnameInput != "") {
+        body["first_name"] = firstnameInput
+    }
+
+    if (lastnameInput != "") {
+        body["last_name"] = lastnameInput
+    }
+
+    if (emailInput != "") {
+        body["email"] = emailInput
+    }
+
+    if (Object.keys(body).length === 0) {
+        alert("Nothing to modify!")
+        return
+    }
 
     let requestOptions = {
         method: "PATCH",
@@ -105,7 +121,7 @@ const update = (e) => {
             "Authorization": `Bearer ${localStorage.getItem("token")}`,
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(body),
         redirect: "follow",
     };
 
@@ -177,12 +193,24 @@ const buy = (id) => {
             "Authorization": `Bearer ${localStorage.getItem("token")}`,
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({ id: id }),
+        body: JSON.stringify({ product: id }),
         redirect: "follow",
     };
 
-    return fetch(`${ip}/buy/`, requestOptions)
+    console.log(`${id}`)
+    console.log(`${ip}/users/buy/`)
+    return fetch(`${ip}/users/buy/`, requestOptions)
         .then((res) => res.json())
+        .then((res) => {
+
+            if (res.code == "token_not_valid") {
+                alert("your token has expired, login and try again")
+            }
+            else {
+
+                alert("buy completed")
+            }
+        })
         .catch((error) => console.log(`error ${error}`));
 }
 export { login, register, update, delete_, getProducts, getProduct, get_user_id, buy }

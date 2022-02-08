@@ -1,9 +1,9 @@
-<body>
+
 
   
     <!-- Shipping table -->
 
-    <table class="shippingTable">
+    <table class="shippingTable ">
 
         <thead>
             <tr>
@@ -48,4 +48,3 @@
 
 
 
-</body>

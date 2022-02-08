@@ -1,7 +1,3 @@
 
-<body>
+    <h2 class="text-center my-[33vh] text-lg"><b>Page in construction</b></h2>
 
-    <h2 class="pages-h2">Page in construction</h2>
-
-
-</body>

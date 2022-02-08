@@ -1,5 +1,4 @@
 
-<body>
     <div class="faq">
 
         <h2 class="title">Frequently asked questions (FAQ)</h2>
@@ -43,5 +42,3 @@
 
 
 
-
-</body>

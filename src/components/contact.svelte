@@ -1,42 +1,37 @@
-<body>
-
-
 
     <!-- contact us form -->
 
 
-    <div class="contact-form">
+    <div class="flex flex-col">
 
-        <h2 class="pages-h2">Contact us</h2>
+        <h2 class="text-lg my-16">Contact us</h2>
 
-        <form class="contact-form" method="post" action="contact-form-process.php">
+        <form class="" method="post" action="">
 
             <div>
                 <label for="Name">Your name</label>
                 <div>
-                    <input type="text" name="Name" required>
+                    <input class="border-gray-300 border-2" type="text" name="Name" required>
                 </div>
             </div>
 
             <div>
                 <label for="Email">Your email address</label>
                 <div>
-                    <input type="email" id="Email" name="Email" required>
+                    <input class="border-gray-300 border-2" type="email" id="Email" name="Email" required>
                 </div>
             </div>
 
-            <div>
+            <div class="mb-16">
                 <label for="Message">Your message</label>
                 <div>
-                    <textarea name="Message" rows="6" minlength="5" maxlength="50" required></textarea>
+                    <textarea class="border-gray-300 border-2" name="Message" rows="6" minlength="5" maxlength="50" required></textarea>
                 </div>
             </div>
 
-            <div>
-                <button type="submit">Send Message</button>
+            <div class="mb-24">
+                <button  class="hover:bg-gray-500  group-hover:text-white p-4 rounded-lg bg-[#dcba9e]" type="submit">Send Message</button>
             </div>
-
-            <div>
 
 
         </form>
@@ -47,5 +42,3 @@
 
 
 
-
-</body>

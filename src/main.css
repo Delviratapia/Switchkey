@@ -2,12 +2,12 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+} */
 
 .header {
     background: radial-gradient(#fff, #fff, #fff, #eeddcf)
@@ -27,14 +27,12 @@ body {
 
 /* searchbar */
 
-/* .search {
+.search {
     width: 100%;
-    position: relative;
-    display: flex;
-    margin-left: 12%;
-} */
 
-/* .searchTerm {
+}
+
+ .searchTerm {
     width: 70%;
     border: 3px solid #dcba9e;
     border-right: none;
@@ -43,7 +41,7 @@ body {
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #877261;
-} */
+}
 
 .searchTerm:focus {
     color: #877261;
@@ -83,7 +81,7 @@ ul {
     text-decoration: none;
     color: #000;
 }
-/* 
+/*
 .navbar {
     padding: 20px;
 } */
@@ -94,12 +92,12 @@ ul {
     display: flex;
     flex-direction: row;
     flex-basis: 30%;
-   
+
 
 } */
 
 
-/* 
+/*
 .navbar ul li {
     padding: 0 5px;
 
@@ -135,17 +133,15 @@ ul {
 }
  */
 
-/* .btn {
-    display: inline-block;
+ .btn {
     background: #dcba9e;
     color: #322a24;
     padding: 8px 30px;
-    margin: 30px 0;
     border-radius: 30px;
     font-style: oblique;
     font-weight: bold;
     transition: background 03s;
-} */
+}
 
 .btn:hover {
     background: #9ec0dc;
@@ -190,7 +186,6 @@ ul {
 .grid-container {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    padding: 50px;
 }
 
 .grid-item {
@@ -274,7 +269,6 @@ a {
     background: rgb(255, 255, 255);
     color: #000000;
     font-size: 14px;
-    padding: 10px 0 5px;
     background: radial-gradient(#fff, #fff, #fff, #eeddcf)
 }
 
@@ -288,53 +282,19 @@ a {
     margin-bottom: 20px;
 }
 
-.footer-col-1,
-.footer-logo,
-.footer-col-2 {
-    min-width: 250px;
-    margin-bottom: 20px;
 
-}
 
-.footer-col-1 {
-    flex-basis: 12%;
-    text-align: center;
+/* .footer-logo { */
+/*     flex: 1; */
+/*     padding-left: 22%; */
+/* } */
 
-}
 
-.footer-logo {
-    flex: 1;
-    padding-left: 22%;
-}
-
-.footer-col-2 ul {
-    flex-basis: 12%;
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.footer-col-2 li {
-    float: left;
-    padding-left: 15;
-
-}
-
-.footer-col-2 h3 {
-    text-align: center;
-    padding-right: 50px;
-}
-
-.footer hr {
+/* .footer hr {
     border-width: 1px;
 
 }
-
-.copyright {
-    text-align: center;
-}
+ */
 
 
 .menubtn {
@@ -372,18 +332,14 @@ a {
     box-shadow: inset 0px 0px 0px -3px #000000;
     background-color: #0d0b09;
     border-radius: 42px;
-    display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Trebuchet MS;
     font-size: 17px;
     font-weight: bold;
     font-style: italic;
-    padding: 17px 22px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #ffffff;
-    float: right;
-
 }
 
 .myButton:hover {
@@ -933,8 +889,8 @@ height: 50%;
     /* Frame */
     display: flex;
     padding: 20px 28px;
-    border-radius: 50px;
-    box-sizing: border-box;
+    border-radius: 5px;
+    /* box-sizing: border-box; */
 
     /* Style */
     border: none;
