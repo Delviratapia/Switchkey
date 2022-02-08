@@ -103,6 +103,7 @@ const register = (e) => {
             }
 
             if (res["non_field_errors"] !== undefined) {
+                console.log(res)
                 alert("not Registered");
                 return;
             }
