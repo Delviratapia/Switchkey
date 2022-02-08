@@ -13,30 +13,36 @@
 
         // delete
         let deleteButton = document.querySelector(".delete-userdata");
-        deleteButton.addEventListener("click", () => {
+        deleteButton.addEventListener("click", (e) => {
             if (confirm("Are you sure you want to delete your account?")) {
-                delete_();
+                delete_(e);
             }
         });
     });
 </script>
 
-<div class="flex lg:w-1/4 w-3/4 sm:w-2/4 smh-2/4 justify-center bg-white border-gray-300 border-4 rounded-xl my-28">
+<div
+    class="flex lg:w-1/4 w-3/4 sm:w-2/4 smh-2/4 justify-center bg-white border-gray-300 border-4 rounded-xl my-28"
+>
     <!-- options -->
     <ul class=" options-btn items-center justify-evenly ">
-    <h2 class="text-black rounded-lg p-4  w-full"><b>Settings</b></h2>
+        <h2 class="text-black rounded-lg p-4  w-full"><b>Settings</b></h2>
 
         <li>
             <!-- svelte-ignore a11y-missing-attribute -->
             <a
                 href="/account/modify"
                 use:link
-                class="modify-userdata options-data w-44 my-8">Modify data account</a
+                class="modify-userdata options-data w-44 my-8"
+                >Modify data account</a
             >
         </li>
         <li>
             <!-- svelte-ignore a11y-missing-attribute -->
-            <a id="delete user" href="#" class="justify-center delete-userdata options-data w-44 my-8"
+            <a
+                id="delete user"
+                href="#"
+                class="justify-center delete-userdata options-data w-44 my-8"
                 >Delete account</a
             >
         </li>
@@ -48,9 +54,9 @@
                     alert("logged out!");
                 }}
                 href="#"
-                class="modify-userdata options-data justify-center mb-12">Logout</a
+                class="modify-userdata options-data justify-center mb-12"
+                >Logout</a
             >
         </li>
-
     </ul>
 </div>

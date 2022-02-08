@@ -181,8 +181,6 @@ const delete_ = (e) => {
                 alert("your token has expired, login and try again")
                 return
             }
-            alert("check console.log")
-            console.log(res)
             alert("deleted!")
         })
         .catch((error) => alert(`Error ${error}`));
