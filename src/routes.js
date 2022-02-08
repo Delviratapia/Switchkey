@@ -1,7 +1,6 @@
 import Home from './components/home.svelte'
 import Account from './components/account.svelte'
 import About from './components/about.svelte'
-import API_keyboards from './components/api_keyboards.svelte'
 import Contact from './components/contact.svelte'
 import Cover_product from './components/cover_product.svelte'
 import Developer_tab from './components/developer_tab.svelte'
@@ -23,7 +22,6 @@ const routes = {
     '/account': Account,
     '/account/modify': Modify,
     '/about': About,
-    '/api_keyboards': API_keyboards,
     '/contact': Contact,
     '/cover_product/:id': Cover_product,
     '/developer_tab': Developer_tab,

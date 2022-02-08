@@ -7,13 +7,14 @@
 
 <!-- logo imagen -->
 <div>
-    <img src="images/logo (1) largo1.png" alt="SwitchKeys" width="1200px" />
+    <img src="images/logo (1) largo1.png" alt="SwitchKeys" class=" h-32 w-3/4 " />
 </div>
-<div class="header">
+
+<div class="header flex flex-row justify-between gap-7 flex-nowrap">
     <!-- Navegation bar  -->
-    <nav class="navbar">
-        <div class="wrapper">
-            <ul class="main-nav" id="js-menu">
+    <nav class="">
+        <div class="">
+            <ul class="" id="">
                 <li>
                     <a href="/keyboards" use:link class="nav-links">Keyboard</a>
                 </li>
@@ -43,7 +44,7 @@
             </div>
         </div>
 
-        <ul class="ul2">
+        <ul class="">
             <li>
                 <a href="/" use:link class="nav-links">Home</a>
             </li>

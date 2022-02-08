@@ -10,7 +10,4 @@
     <!-- table for showing data -->
     <table id="keyboards"></table>
 
-
-    <script src="js/api.js"></script>
-
 </body>
