@@ -79,6 +79,29 @@ const register = (e) => {
     fetch(`${ip}/accounts/registration/`, requestOptions)
         .then((res) => res.json())
         .then(async (res) => {
+            if (res["password1"] !== undefined && res["pass"] !== undefined) {
+                alert(res["password2"])
+                return;
+
+            }else {
+                if (res["password1"] !== undefined) {
+                    alert(res["password1"])
+                    return;
+
+                }
+            }
+            if (res["email"] !== undefined) {
+                alert(res["email"])
+                return;
+
+            }
+
+            if (res["username"] !== undefined) {
+                alert(res["username"])
+                return;
+
+            }
+          
             if (res["non_field_errors"] !== undefined) {
                 alert("not Registered");
                 return;
@@ -86,6 +109,7 @@ const register = (e) => {
             localStorage.setItem("token", res.access_token);
             await get_user_id();
             alert("registered");
+            location.reload();
         })
         .catch((error) => alert("Error registering", error));
 }

@@ -8,16 +8,16 @@
     });
 </script>
 
-<h2>Choose the data you want to change</h2>
+<h2 class="mt-24 text-xl"><b>Choose the data you want to change</b></h2>
 <div class="custom-select">
     <div id="updateFields">
-        <input class="fname-input" type="text" placeholder="First name" />
-        <input class="lname-input" type="text" placeholder="Last name" />
-        <input class="email-input" type="text" placeholder="Email" />
+        <input class="fname-input border-2 border-gray-500 mb-3" type="text" placeholder="First name" />
+        <input class="lname-input border-2 border-gray-500 mb-3" type="text" placeholder="Last name" />
+        <input class="email-input border-2 border-gray-500 mb-3" type="text" placeholder="Email" />
     </div>
 
     <div class="confirmbuttons">
-        <button id="confirm-update">Update</button>
+        <button id="confirm-update" class="hover:bg-gray-500  group-hover:text-white p-4 rounded-lg bg-[#dcba9e]">Update</button>
         <button id="cancel" class="hidden">Cancel</button>
     </div>
 </div>
