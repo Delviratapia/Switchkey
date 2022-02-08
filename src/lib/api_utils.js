@@ -181,6 +181,9 @@ const delete_ = (e) => {
                 alert("your token has expired, login and try again")
                 return
             }
+            alert("testing!")
+            console.log(res)
+            localStorage.removeItem('token')
             alert("deleted!")
         })
         .catch((error) => alert(`Error ${error}`));
