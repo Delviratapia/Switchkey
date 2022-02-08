@@ -36,7 +36,7 @@ const login = (e) => {
         .then((res) => res.json())
         .then(async (res) => {
             if (res["non_field_errors"] !== undefined) {
-                alert("not logged in");
+                alert("Wrong username or password");
                 return;
             }
             localStorage.setItem("token", res.access_token);

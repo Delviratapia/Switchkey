@@ -5,7 +5,7 @@
     import { get_user_id } from "../lib/api_utils.js";
 </script>
 
-<div class="auth-container flex-col gap-10 sm:flex-row">
+<div class="auth-container my-4 flex-col justify-evenly gap-10 sm:flex-row">
     {#await get_user_id() then res}
         {#if res.code == "token_not_valid"}
             <Login />
