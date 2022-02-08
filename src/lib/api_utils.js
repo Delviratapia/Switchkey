@@ -162,13 +162,11 @@ const update = (e) => {
         .catch((error) => alert(`Error ${error}`));
 }
 
-const delete_ = (e) => {
-    e.preventDefault();
+const delete_ = () => {
     let requestOptions = {
         method: "DELETE",
         headers: {
             "Authorization": `Bearer ${localStorage.getItem("token")}`,
-            "Content-Type": "application/json",
         },
         redirect: "follow",
     };
@@ -181,12 +179,13 @@ const delete_ = (e) => {
                 alert("your token has expired, login and try again")
                 return
             }
-            alert("testing!")
-            console.log(res)
-            localStorage.removeItem('token')
-            alert("deleted!")
+            // location.reload();
         })
-        .catch((error) => alert(`Error ${error}`));
+        .catch((_) => {
+            localStorage.removeItem('token')
+            localStorage.removeItem('user_id')
+            alert("deleted!")
+        });
 }
 
 const getProducts = () => {

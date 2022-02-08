@@ -13,9 +13,9 @@
 
         // delete
         let deleteButton = document.querySelector(".delete-userdata");
-        deleteButton.addEventListener("click", (e) => {
+        deleteButton.addEventListener("click", () => {
             if (confirm("Are you sure you want to delete your account?")) {
-                delete_(e);
+                delete_();
             }
         });
     });
